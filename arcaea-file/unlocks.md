@@ -118,7 +118,7 @@ type取1时，为先行通过歌曲型解锁，玩家需要在其前置歌曲中
 }
 ```
 
- type取2时，为先行游玩歌曲型解锁，与[先行通过歌曲型解锁](https://arcaeamemory.gitbook.io/memory-wiki/arcaea-file/unlocks#先行通过歌曲型解锁)类似，不过对应结果为游玩相应曲目即可。变量不再赘述。
+ type取2时，为先行游玩歌曲型解锁，与[先行通过歌曲型解锁](https://arcaeamemory.gitbook.io/memory-wiki/arcaea-file/unlocks#xian-hang-you-wan-ge-qu-xing-jie-suo)类似，不过对应结果为游玩相应曲目即可。变量不再赘述。
 
 #### 多次通过歌曲型解锁
 
