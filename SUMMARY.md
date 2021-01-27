@@ -2,7 +2,8 @@
 
 * [前言](README.md)
 
-## Arcaea 文件格式
+## Arcaea 文件格式 <a id="arcaea-file"></a>
 
-* [谱面格式](arcaea-wen-jian-ge-shi/pu-mian-ge-shi.md)
+* [谱面格式](arcaea-file/aff.md)
+* [歌曲信息\(songlist\)格式](arcaea-file/songlist.md)
 
