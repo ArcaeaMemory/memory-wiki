@@ -126,7 +126,7 @@ arc(t1,t2,x1,x2,slidemethod,y1,y2,color,FX,true)[arctap(tn1),arctap(tn2),……,
   * angle\(°\):底盘依照屏幕中心旋转,正逆时针负顺时针
   * easing\(qi,qo,l,reset,s\):cubicin,cubicout,line,reset,sinein&out
   * lastingtime\(ms\):本语句持续时间
-    * 本功能在1.7.0在代码中被标记关闭，1.8.0中相关代码被彻底删除，但在之后的愚人节版本中被恢复
+  * 本功能在1.7.0在代码中被标记关闭，1.8.0中相关代码被彻底删除，但在之后的愚人节版本中被恢复
 
 ### 2.0.2新特性
 
