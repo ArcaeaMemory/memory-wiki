@@ -113,20 +113,20 @@ arc(t1,t2,x1,x2,slidemethod,y1,y2,color,FX,true)[arctap(tn1),arctap(tn2),……,
 * 新增camera语句
   * 位置在第一个Timing语句下方，**不混杂在真正note语句里**，按时间顺序排列，用一个空行与真正note语句分开
 
-```text
-camera(t,transverse,bottomzoom,linezoom,steadyangle,topzoom,angle,easing,lastingtime);
-```
+  ```text
+  camera(t,transverse,bottomzoom,linezoom,steadyangle,topzoom,angle,easing,lastingtime);
+  ```
 
-* t\(ms\):camera开始时间
-* transverse:轨道底部左右横向移动,正←负→.
-* bottomzoom:轨道底部上下移动,正↓负↑
-* linezoom:判定线前后移动,正远离负靠近
-* steadyangle\(°\):原地的摄像头视角转向,正逆时针负顺时针
-* topzoom:轨道顶部的上下移动,正↓负↑
-* angle\(°\):底盘依照屏幕中心旋转,正逆时针负顺时针
-* easing\(qi,qo,l,reset,s\):cubicin,cubicout,line,reset,sinein&out
-* lastingtime\(ms\):本语句持续时间
-* * 本功能在1.7.0在代码中被标记关闭，1.8.0中相关代码被彻底删除，但在之后的愚人节版本中被恢复
+  * t\(ms\):camera开始时间
+  * transverse:轨道底部左右横向移动,正←负→.
+  * bottomzoom:轨道底部上下移动,正↓负↑
+  * linezoom:判定线前后移动,正远离负靠近
+  * steadyangle\(°\):原地的摄像头视角转向,正逆时针负顺时针
+  * topzoom:轨道顶部的上下移动,正↓负↑
+  * angle\(°\):底盘依照屏幕中心旋转,正逆时针负顺时针
+  * easing\(qi,qo,l,reset,s\):cubicin,cubicout,line,reset,sinein&out
+  * lastingtime\(ms\):本语句持续时间
+    * 本功能在1.7.0在代码中被标记关闭，1.8.0中相关代码被彻底删除，但在之后的愚人节版本中被恢复
 
 ### 2.0.2新特性
 
@@ -138,12 +138,12 @@ camera(t,transverse,bottomzoom,linezoom,steadyangle,topzoom,angle,easing,lasting
 * camera和绿arc回来了
 * 新增scenecontrol语句
 
-```text
-scenecontrol(t,type);
-```
+  ```text
+  scenecontrol(t,type);
+  ```
 
-* t\(ms\):场景开始时间
-* type\(trackhide,trackshow\):是否展示轨道
+  * t\(ms\):场景开始时间
+  * type\(trackhide,trackshow\):是否展示轨道
 
 ### 3.0.0新特性
 
