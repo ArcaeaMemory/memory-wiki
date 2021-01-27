@@ -149,22 +149,19 @@ scenecontrol(t,type);
 
 * 新增timinggroup语句块
 
-```text
-timinggroup(){
- //xxx
-};
-```
-
-* * 每一个timinggroup语句块中的语句使用其内部单独的timing语句，因此可以实现同时刻不同note流速。
-* * timinggroup语句块中的timing语句不会产生小节线。
-* * 一张谱面理论可以存在无限多个timinggroup语句块。
-* scenecontrol语句修改参数
-
   ```text
-  scenecontrol(t,type,x,y);
+  timinggroup(){
+   //xxx
+  };
   ```
 
+  * 每一个timinggroup语句块中的语句使用其内部单独的timing语句，因此可以实现同时刻不同note流速。
+  * timinggroup语句块中的timing语句不会产生小节线
+  * 一张谱面理论可以存在无限多个timinggroup语句块。
 
+* ```text
+  scenecontrol(t,type,x,y);
+  ```
 
   * t\(ms\): 场景开始时间
   * type:
