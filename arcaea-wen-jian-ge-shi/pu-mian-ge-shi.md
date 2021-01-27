@@ -159,7 +159,9 @@ scenecontrol(t,type);
   * timinggroup语句块中的timing语句不会产生小节线
   * 一张谱面理论可以存在无限多个timinggroup语句块。
 
-* ```text
+* scenecontrol语句修改参数
+
+  ```text
   scenecontrol(t,type,x,y);
   ```
 
