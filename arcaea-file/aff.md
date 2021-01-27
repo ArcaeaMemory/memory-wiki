@@ -45,7 +45,7 @@ x=1时效果与省略此行相同
 
 ~~如果x的值特别大的话...~~
 
-在该文件里并没有曲名，谱师之类的歌曲信息，请移步[歌曲信息\(songlist\)格式](https://wiki.arcaea.cn/index.php/%E6%AD%8C%E6%9B%B2%E4%BF%A1%E6%81%AF%28songlist%29%E6%A0%BC%E5%BC%8F)
+在该文件里并没有曲名，谱师之类的歌曲信息，请移步[歌曲信息\(songlist\)格式](https://arcaeamemory.gitbook.io/memory-wiki/arcaea-file/songlist)
 
 如果想更改关于解歌条件的部分，请移步[解锁条件\(unlocks\)格式](https://wiki.arcaea.cn/index.php/%E8%A7%A3%E9%94%81%E6%9D%A1%E4%BB%B6%28unlocks%29%E6%A0%BC%E5%BC%8F)
 
