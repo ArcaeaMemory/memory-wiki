@@ -1,6 +1,6 @@
 # 前言
 
-这里是由ArcaeaMemory社团所发起的Arcaea技术性文档项目。目前计划撰写的页面为ArcaeaAPI的文档：[Memory Wiki](https://arcaeamemory.gitbook.io/memory-wiki/)
+[Memory Wiki](https://arcaeamemory.gitbook.io/memory-wiki/)是由ArcaeaMemory社团所发起的Arcaea技术性文档项目。目前计划撰写的页面为ArcaeaAPI的文档
 
 本项目中关于Arcaea文件格式的文档出自Arcaea中文维基
 
