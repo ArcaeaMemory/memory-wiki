@@ -11,20 +11,6 @@
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Accept-Encoding" type="string" required=true %}
-identity
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="Content-Type" type="string" required=true %}
-application/x-www-form-urlencoded; charset=utf-8
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="AppVersion" type="string" required=true %}
-$AppVersion
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
 {% api-method-form-data-parameters %}
 {% api-method-parameter name="name" type="string" required=true %}
 $Name
@@ -61,6 +47,46 @@ $Platform
         "user_id": $UserID,
         "access_token": $AccessToken
     }
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="post" host="https://arcapi.lowiro.com" path="/coffee/12/auth/login" %}
+{% api-method-summary %}
+登录
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+Basic $base64\($Name:$Password\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="DeviceId" type="string" required=false %}
+$DeviceID
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+    "access_token": $AccessToken,
+    "token_type":"Bearer",
+    "success":true
 }
 ```
 {% endapi-method-response-example %}
