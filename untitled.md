@@ -5,10 +5,6 @@
 注册
 {% endapi-method-summary %}
 
-{% api-method-description %}
-This endpoint allows you to get free cakes.
-{% endapi-method-description %}
-
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
@@ -19,11 +15,31 @@ identity
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 application/x-www-form-urlencoded; charset=utf-8
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="AppVersion" type="string" required=true %}
+$AppVersion
+{% endapi-method-parameter %}
 {% endapi-method-headers %}
 
 {% api-method-form-data-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
+{% api-method-parameter name="name" type="string" required=true %}
+$Name
+{% endapi-method-parameter %}
 
+{% api-method-parameter name="password" type="string" required=true %}
+$Password
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="email" type="string" required=true %}
+$Email
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="device_id" type="string" required=true %}
+$DeviceID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="platform" type="string" required=true %}
+$Platform
 {% endapi-method-parameter %}
 {% endapi-method-form-data-parameters %}
 {% endapi-method-request %}
