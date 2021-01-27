@@ -132,7 +132,7 @@ type取1时，为先行通过歌曲型解锁，玩家需要在其前置歌曲中
 }
 ```
 
-type取3时，为多次通过歌曲型解锁，与[先行通过歌曲型解锁](https://wiki.arcaea.cn/index.php/%E8%A7%A3%E9%94%81%E6%9D%A1%E4%BB%B6%28unlocks%29%E6%A0%BC%E5%BC%8F#.E5.85.88.E8.A1.8C.E9.80.9A.E8.BF.87.E6.AD.8C.E6.9B.B2.E5.9E.8B.E8.A7.A3.E9.94.81)类似，不过需要多次通过相应曲目并达到给定评级。
+type取3时，为多次通过歌曲型解锁，与[先行通过歌曲型解锁](https://arcaeamemory.gitbook.io/memory-wiki/arcaea-file/unlocks#xian-hang-you-wan-ge-qu-xing-jie-suo)类似，不过需要多次通过相应曲目并达到给定评级。
 
 * times \(int\)：指先行通过的歌曲需要达到限定评级的次数。
 
