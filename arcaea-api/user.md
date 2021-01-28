@@ -66,11 +66,11 @@ $Platform
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Basic $base64\($Name:$Password\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="DeviceId" type="string" required=false %}
+{% api-method-parameter name="DeviceId" type="string" required=true %}
 $DeviceID
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
