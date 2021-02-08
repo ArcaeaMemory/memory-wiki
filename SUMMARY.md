@@ -12,7 +12,5 @@
 
 ## Arcaea API
 
----
-
-* [必读](readme.md)
+* [必读](arcaea-api/readme.md)
 
