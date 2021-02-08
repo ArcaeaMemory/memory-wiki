@@ -100,10 +100,12 @@ BEYOND：3
 
 {% api-method-parameter name="clear\_type" type="number" required=true %}
 ​通关类型  
-失败：0  
-平衡型：1  
-支援型（骨折光也是）：4  
-挑战型：5
+Fail：0  
+Normal Clear：1  
+Full Recall：2  
+Pure Memory：3  
+Easy Clear：4  
+Hard Clear：5
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="submission\_hash" type="string" required=true %}
@@ -184,80 +186,16 @@ BEYOND：3
             "health": 100, //回忆率（血量）
             "modifier": 0, //游玩模式（同上文中提到的modifier）
             "time_played": 1608383064657, //游玩时间
-            "best_clear_type": 5, //最好 s
-            "clear_type": 1,
-            "name": "wclnmlgcb",
-            "character": 24,
-            "is_skill_sealed": false,
-            "is_char_uncapped": false,
-            "rank": 7764
+            "best_clear_type": 5, //最高的通关类型（从低到高排序为4<1<5<2<3）
+            "clear_type": 1, //通关类型
+            "name": string, //用户名
+            "character": 24, //搭档
+            "is_skill_sealed": false, //技能是否被锁定
+            "is_char_uncapped": false, //搭档是否已觉醒
+            "rank": 7764 //排名
         } *(limit+1)
     ]
 }
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% api-method method="post" host="https://arcapi.lowiro.com" path="/latte/13/score/song" %}
-{% api-method-summary %}
-
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="song\_id" type="string" required=true %}
-​曲目ID
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% api-method method="post" host="https://arcapi.lowiro.com" path="/latte/13/score/song" %}
-{% api-method-summary %}
-
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="song\_id" type="string" required=true %}
-​曲目ID
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
