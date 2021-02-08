@@ -159,12 +159,12 @@ Hard Clear：5
 ​难度（表示方法同上传成绩中difficulty一栏）
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="start" type="string" required=true %}
-​用户所在条目的序号
+{% api-method-parameter name="start" type="number" required=true %}
+​玩家所在条目的序号
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="limit" type="string" required=true %}
-排名最低的条目的序号（​即为总显示条目 - 1）
+{% api-method-parameter name="limit" type="number" required=true %}
+排名最低的条目的序号（​即总显示条目数 - 1）
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -180,7 +180,7 @@ Hard Clear：5
     "success": true,
     "value": [
         {
-            "user_id": $UserID,
+            "user_id": 0000001, //玩家ID
             "song_id": string, //歌曲ID
             "difficulty": 0, //难度
             "score": 1919810, //分数
@@ -197,7 +197,7 @@ Hard Clear：5
             "character": 24, //搭档
             "is_skill_sealed": false, //技能是否被锁定
             "is_char_uncapped": false, //搭档是否已觉醒
-            "rank": 7764 //排名
+            "rank": 1919 //排名
         } *(limit+1)
     ]
 }
@@ -219,20 +219,20 @@ Hard Clear：5
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
+{% api-method-parameter name="song\_id" type="string" required=true %}
+​曲目ID
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="" type="string" required=false %}
-
+{% api-method-parameter name="difficulty" type="number" required=true %}
+​难度
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="" type="string" required=false %}
-
+{% api-method-parameter name="start" type="number" required=true %}
+默认为0（不知道在好友很多的时候会是什么）
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="" type="string" required=false %}
-
+{% api-method-parameter name="limit" type="number" required=true %}
+最多显示条目数 - 1
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -243,8 +243,100 @@ Hard Clear：5
 
 {% endapi-method-response-example-description %}
 
+```javascript
+{
+    "success": true,
+    "value": [
+        {
+            "user_id": 0000001, //玩家ID
+            "song_id": string, //歌曲ID
+            "difficulty": 0, //难度
+            "score": 1919810, //分数
+            "shiny_perfect_count": 1145,//完美Perfect数
+            "perfect_count": 1413, //Perfect总数
+            "near_count": 11, //Far数量
+            "miss_count": 45, //Miss数量
+            "health": 100, //回忆率（血量）
+            "modifier": 0, //游玩模式（同上文中提到的modifier）
+            "time_played": 1608383064657, //游玩时间
+            "best_clear_type": 5, //最高的通关类型（从低到高排序为4<1<5<2<3）
+            "clear_type": 1, //通关类型
+            "name": string, //用户名
+            "character": 24, //搭档
+            "is_skill_sealed": false, //技能是否被锁定
+            "is_char_uncapped": false, //搭档是否已觉醒
+            "rank": 4 //列表中的排名
+        } *(limit+1)
+    ]
+}
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
+{% api-method method="get" host="https://arcapi.lowiro.com" path="/latte/13/score/song" %}
+{% api-method-summary %}
+​世界
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="song\_id" type="string" required=true %}
+​曲目ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="difficulty" type="number" required=true %}
+​难度
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="start" type="number" required=true %}
+​默认为0（不知道如果玩家在世界榜里会是什么）
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="limit" type="number" required=true %}
+​最多显示条目数 - 1
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+    "success": true,
+    "value": [
+        {
+            "user_id": 0000001, //玩家ID
+            "song_id": string, //歌曲ID
+            "difficulty": 0, //难度
+            "score": 10000001, //分数
+            "shiny_perfect_count": 1,//完美Perfect数
+            "perfect_count": 1, //Perfect总数
+            "near_count": 0, //Far数量
+            "miss_count": 0, //Miss数量
+            "health": 100, //回忆率（血量）
+            "modifier": 0, //游玩模式（同上文中提到的modifier）
+            "time_played": 1145141919810, //游玩时间
+            "best_clear_type": 5, //最高的通关类型（从低到高排序为4<1<5<2<3）
+            "clear_type": 1, //通关类型
+            "name": string, //用户名
+            "character": 13, //搭档
+            "is_skill_sealed": false, //技能是否被锁定
+            "is_char_uncapped": false, //搭档是否已觉醒
+            "rank": 1 //列表中的排名
+        } *(limit+1)
+    ]
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
