@@ -120,8 +120,13 @@ Hard Clear：5
 
 {% endapi-method-response-example-description %}
 
-```
-排名
+```javascript
+{
+    "success": true,
+    "value": {
+        "user_rating": 1145 //玩家潜力值
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
