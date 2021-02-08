@@ -21,7 +21,8 @@
 {% endapi-method-response-example-description %}
 
 ```javascript
-{"success": true,
+{
+    "success": true,
     "value": {
         "token": $SongToken
     }
