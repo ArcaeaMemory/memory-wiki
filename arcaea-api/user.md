@@ -38,11 +38,9 @@ $Platform
 
 ```javascript
 {
-    "success": true,
-    "value": {
-        "user_id": $UserID,
-        "access_token": $AccessToken
-    }
+    "access_token": $AccessToken,
+    "token_type":" Bearer",
+    "success": true
 }
 ```
 {% endapi-method-response-example %}
