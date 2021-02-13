@@ -6,7 +6,7 @@
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+​由于条件有限，本条目不保证正确
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -62,10 +62,6 @@ $Platform
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
 Basic $base64\($Name:$Password\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="DeviceId" type="string" required=true %}
-$DeviceID
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
