@@ -39,7 +39,7 @@ $Platform
 ```javascript
 {
     "access_token": $AccessToken,
-    "token_type":" Bearer",
+    "token_type": "Bearer",
     "success": true
 }
 ```
