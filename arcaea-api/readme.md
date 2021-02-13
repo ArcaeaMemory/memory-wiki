@@ -22,11 +22,12 @@
 
 如无特殊说明，所有的请求中Header一定包含以下内容：
 
-|  |  |
+| key | value |
 | :--- | :--- |
 | Accept-Encoding | identity |
 | Content-Type | application/x-www-form-urlencoded; charset=utf-8 |
 | AppVersion | $AppVersion |
+| DeviceID | 不会验证，随便填 |
 | User-Agent | 不知道会不会检验这个所以先写在这 |
 |  | 登录后所发出的请求会包含以下内容 |
 | i | $UserID |
