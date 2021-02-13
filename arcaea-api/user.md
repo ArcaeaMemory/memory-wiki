@@ -1,6 +1,6 @@
 # 账户
 
-{% api-method method="post" host="https://arcapi.lowiro.com" path="/coffee/13/user/" %}
+{% api-method method="post" host="https://arcapi.lowiro.com" path="/latte/13/user/" %}
 {% api-method-summary %}
 注册
 {% endapi-method-summary %}
@@ -22,10 +22,6 @@ $Password
 
 {% api-method-parameter name="email" type="string" required=true %}
 $Email
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="device\_id" type="string" required=true %}
-$DeviceID
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="platform" type="string" required=true %}
@@ -54,7 +50,7 @@ $Platform
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://arcapi.lowiro.com" path="/coffee/13/auth/login" %}
+{% api-method method="post" host="https://arcapi.lowiro.com" path="/latte/13/auth/login" %}
 {% api-method-summary %}
 登录
 {% endapi-method-summary %}
