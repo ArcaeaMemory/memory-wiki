@@ -105,7 +105,7 @@ client\_credentials
 
 {% api-method-response-example httpCode=403 %}
 {% api-method-response-example-description %}
-顶顶顶顶但是颠三倒
+的
 {% endapi-method-response-example-description %}
 
 ```javascript
