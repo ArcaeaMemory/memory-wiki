@@ -75,14 +75,43 @@ client\_credentials
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+登录成功
 {% endapi-method-response-example-description %}
 
 ```javascript
 {
     "access_token": $AccessToken,
-    "token_type":"Bearer",
-    "success":true
+    "token_type": "Bearer",
+    "success": true
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=302 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "success": false,
+    "error_code": 105,
+    "extra": {
+        "remaining_ts": 114514
+    }
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+顶顶顶顶但是颠三倒
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+    "success": false,
+    "error_code": 104
 }
 ```
 {% endapi-method-response-example %}
