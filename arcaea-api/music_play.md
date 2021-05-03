@@ -24,7 +24,7 @@
 {
     "success": true,
     "value": {
-        "token": $SongToken
+        "token": songToken
     }
 }
 ```
@@ -46,7 +46,7 @@
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="song\_token" type="string" required=true %}
-$SongToken
+songToken
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="song\_hash" type="string" required=true %}
@@ -59,10 +59,6 @@ $SongToken
 
 {% api-method-parameter name="difficulty" type="number" required=true %}
 ​难度  
-PAST：0  
-PRESENT：1  
-FUTURE：2  
-BEYOND：3
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="score" type="number" required=true %}
@@ -100,12 +96,6 @@ BEYOND：3
 
 {% api-method-parameter name="clear\_type" type="number" required=true %}
 ​通关类型  
-Fail：0  
-Normal Clear：1  
-Full Recall：2  
-Pure Memory：3  
-Easy Clear：4  
-Hard Clear：5
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="submission\_hash" type="string" required=true %}
@@ -124,7 +114,7 @@ Hard Clear：5
 {
     "success": true,
     "value": {
-        "user_rating": 1145 //玩家潜力值
+        "user_rating": rating
     }
 }
 ```
@@ -178,28 +168,7 @@ Hard Clear：5
 ```javascript
 {
     "success": true,
-    "value": [
-        {
-            "user_id": 0000001, //玩家ID
-            "song_id": string, //歌曲ID
-            "difficulty": 0, //难度
-            "score": 1919810, //分数
-            "shiny_perfect_count": 1145,//完美Perfect数
-            "perfect_count": 1413, //Perfect总数
-            "near_count": 11, //Far数量
-            "miss_count": 45, //Miss数量
-            "health": 100, //回忆率（血量）
-            "modifier": 0, //游玩模式（同上文中提到的modifier）
-            "time_played": 1608383064657, //游玩时间
-            "best_clear_type": 5, //最高的通关类型（从低到高排序为4<1<5<2<3）
-            "clear_type": 1, //通关类型
-            "name": string, //用户名
-            "character": 24, //搭档
-            "is_skill_sealed": false, //技能是否被锁定
-            "is_char_uncapped": false, //搭档是否已觉醒
-            "rank": 1919 //排名
-        } *(limit+1)
-    ]
+    "value": [ 成绩对象 * (limit+1) ]
 }
 ```
 {% endapi-method-response-example %}
@@ -246,28 +215,7 @@ Hard Clear：5
 ```javascript
 {
     "success": true,
-    "value": [
-        {
-            "user_id": 0000001, //玩家ID
-            "song_id": string, //歌曲ID
-            "difficulty": 0, //难度
-            "score": 1919810, //分数
-            "shiny_perfect_count": 1145,//完美Perfect数
-            "perfect_count": 1413, //Perfect总数
-            "near_count": 11, //Far数量
-            "miss_count": 45, //Miss数量
-            "health": 100, //回忆率（血量）
-            "modifier": 0, //游玩模式（同上文中提到的modifier）
-            "time_played": 1608383064657, //游玩时间
-            "best_clear_type": 5, //最高的通关类型（从低到高排序为4<1<5<2<3）
-            "clear_type": 1, //通关类型
-            "name": string, //用户名
-            "character": 24, //搭档
-            "is_skill_sealed": false, //技能是否被锁定
-            "is_char_uncapped": false, //搭档是否已觉醒
-            "rank": 4 //列表中的排名
-        } *(limit+1)
-    ]
+    "value": [ 成绩对象  * (limit+1) ]
 }
 ```
 {% endapi-method-response-example %}
@@ -314,28 +262,7 @@ Hard Clear：5
 ```javascript
 {
     "success": true,
-    "value": [
-        {
-            "user_id": 0000001, //玩家ID
-            "song_id": string, //歌曲ID
-            "difficulty": 0, //难度
-            "score": 10000001, //分数
-            "shiny_perfect_count": 1,//完美Perfect数
-            "perfect_count": 1, //Perfect总数
-            "near_count": 0, //Far数量
-            "miss_count": 0, //Miss数量
-            "health": 100, //回忆率（血量）
-            "modifier": 0, //游玩模式（同上文中提到的modifier）
-            "time_played": 1145141919810, //游玩时间
-            "best_clear_type": 5, //最高的通关类型（从低到高排序为4<1<5<2<3）
-            "clear_type": 1, //通关类型
-            "name": string, //用户名
-            "character": 13, //搭档
-            "is_skill_sealed": false, //技能是否被锁定
-            "is_char_uncapped": false, //搭档是否已觉醒
-            "rank": 1 //列表中的排名
-        } *(limit+1)
-    ]
+    "value": [ 成绩对象  * (limit+1) ]
 }
 ```
 {% endapi-method-response-example %}

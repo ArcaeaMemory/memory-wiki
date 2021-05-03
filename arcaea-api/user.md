@@ -13,19 +13,19 @@
 {% api-method-request %}
 {% api-method-form-data-parameters %}
 {% api-method-parameter name="name" type="string" required=true %}
-$Name
+用户名
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="password" type="string" required=true %}
-$Password
+密码
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="email" type="string" required=true %}
-$Email
+电子邮箱
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="platform" type="string" required=true %}
-$Platform
+操作系统
 {% endapi-method-parameter %}
 {% endapi-method-form-data-parameters %}
 {% endapi-method-request %}
@@ -38,7 +38,7 @@ $Platform
 
 ```javascript
 {
-    "access_token": $AccessToken,
+    "access_token": 登录凭证,
     "token_type": "Bearer",
     "success": true
 }
@@ -80,7 +80,7 @@ client\_credentials
 
 ```javascript
 {
-    "access_token": $AccessToken,
+    "access_token": 登录凭证,
     "token_type": "Bearer",
     "success": true
 }
@@ -90,6 +90,8 @@ client\_credentials
 {% api-method-response-example httpCode=302 %}
 {% api-method-response-example-description %}
 
+超过两台设备登录
+
 {% endapi-method-response-example-description %}
 
 ```
@@ -97,13 +99,13 @@ client\_credentials
     "success": false,
     "error_code": 105,
     "extra": {
-        "remaining_ts": 114514
+        "remaining_ts": 时间/秒
     }
 }
 ```
 {% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=403 %}
+{% api-method-response-example httpCode=302 %}
 {% api-method-response-example-description %}
 的
 {% endapi-method-response-example-description %}

@@ -7,3 +7,5 @@
 * [账户](arcaea-api/user.md)
 * [游玩](arcaea-api/music_play.md)
 
+[术语和对象](object.md)
+
